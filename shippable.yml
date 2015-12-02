@@ -1,8 +1,7 @@
-language:
- - python
- - node_js
-node_js:
- - 0.10
+build_image: drydock/u14pyt:prod
+language: python
+python:
+ - 2.7
 install: true
 script: true
 # Test
