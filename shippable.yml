@@ -10,3 +10,4 @@ script:
  - echo "Now using MySQL"
  - mysql -e "create database foo"
  - mysql -e "show databases"
+cache: true
