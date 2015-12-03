@@ -9,6 +9,7 @@ script:
  - sudo su postgres -c 'psql -c "drop database foo"' || true
  - sudo su postgres -c 'psql -c "create database foo"'
  - echo "Now using MySQL"
+ - mysql -e "drop database if exists foo"
  - mysql -e "create database foo"
  - mysql -e "show databases"
 cache: true
