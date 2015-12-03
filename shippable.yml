@@ -5,5 +5,8 @@ python:
  - 2.7
 install: true
 script: 
+ - echo "Now using PostgreSQL"
  - sudo su postgres -c 'psql -c "create database foo"'
-# Test
+ - echo "Now using MySQL"
+ - mysql -e "create database foo"
+ - mysql -e "show databases"
