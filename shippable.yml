@@ -1,15 +1,16 @@
 #build_image: drydock/u14pytpls:prod
 #build_image: ragesh/u14pytpls
+build_image: shippableimages/ubuntu1204_nodejs
 language: python
 python:
  - 2.7
 install: true
-script: 
- - echo "Now using PostgreSQL"
- - sudo su postgres -c 'psql -c "drop database foo"' || true
- - sudo su postgres -c 'psql -c "create database foo"'
- - echo "Now using MySQL"
- - mysql -e "drop database if exists foo"
- - mysql -e "create database foo"
- - mysql -e "show databases"
+script: true
+# - echo "Now using PostgreSQL"
+# - sudo su postgres -c 'psql -c "drop database foo"' || true
+# - sudo su postgres -c 'psql -c "create database foo"'
+# - echo "Now using MySQL"
+# - mysql -e "drop database if exists foo"
+# - mysql -e "create database foo"
+# - mysql -e "show databases"
 cache: true
