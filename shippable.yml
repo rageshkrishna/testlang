@@ -6,6 +6,7 @@ python:
 install: true
 script: 
  - echo "Now using PostgreSQL"
+ - sudo su postgres -c 'psql -c "drop database foo"' || true
  - sudo su postgres -c 'psql -c "create database foo"'
  - echo "Now using MySQL"
  - mysql -e "create database foo"
