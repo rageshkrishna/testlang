@@ -1,5 +1,5 @@
-#build_image: drydock/u14pytpls:prod
-build_image: ragesh/u14pytpls
+build_image: drydock/u14pytpls:prod
+#build_image: ragesh/u14pytpls
 #build_image: shippableimages/ubuntu1204_nodejs
 language: python
 python:
